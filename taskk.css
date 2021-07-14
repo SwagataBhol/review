@@ -1,0 +1,157 @@
+body{
+    display: flex; 
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+.container{
+
+   height: auto ;
+    width:auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-grow: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+   
+}
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 45%;
+  
+  background-color: hsl(244, 38%, 16%);
+
+}
+#left{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+}
+img{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(-500deg) saturate(500%) contrast(0.8);
+}
+
+h1{
+    color: white;
+    filter: brightness(120%);
+    font-size: medium;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+
+}
+span{
+    color:hsl(277, 64%, 61%)
+    /* filter: contrast(50%); */
+}
+.midpara{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+#last{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.parts{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+
+}
+.num{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    filter: brightness(150%);
+    padding-bottom: 2px;
+}
+.para{
+    color:white;
+    font-weight: 400;
+    
+    
+    
+
+}
+.midpara{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 2px;
+    width: 100%;
+    font-size: 17px;
+    filter: brightness(90%)   
+
+}
+
+@media only screen and (max-width: 720px)  {
+    
+   
+    .container{
+          display: flex;
+        object-fit: fill;
+         flex-direction: column-reverse;
+         
+      }
+      .inner{
+          min-height: 30%;
+          width: 100%;
+      }
+      #right{
+        
+          height: 30%;
+          width: 100%;
+        
+      }
+
+      #left{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          height: 70%;
+          width: 100%;
+          
+      }
+      #last{
+          flex-direction: column;
+            height: 60%;
+        
+      }
+
+      img{
+            
+          height: 100%;
+          width: 100%;
+      }
+      .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          height:25% ;
+          margin-bottom: 3%;
+            padding-left:30%;
+      }
+      #up{
+          height: 20%;
+      }
+      #mid{
+          height: 20%;
+      }
+    
+}
+
+
